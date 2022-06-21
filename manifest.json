@@ -1,22 +1,27 @@
 {
-    "manifest_version": 2,
-    "name": "No Distractions",
-    "version": "1.0",
-    "description": "This Chrome Extension blocks content from appearing on distracting social media websites, making it easier to stay focused.",
-    "content_scripts": [
-        {
-          "matches": [
-                "https://www.youtube.com/*", 
-                "https://www.facebook.com/*", 
-                "https://www.reddit.com/*", 
-                "https://www.instagram.com/*", 
-                "https://www.amazon.com/*", 
-                "https://www.tiktok.com/*", 
-                "https://www.tumblr.com/*", 
-                "https://twitter.com/*", 
-                "https://www.twitch.tv/*"
-            ],
-          "js": ["./main.js"]
-        }
-      ]
+  "manifest_version": 2,
+  "name": "No Distractions",
+  "version": "1.0",
+  "description": "This Chrome Extension blocks content from appearing on distracting social media websites, making it easier to stay focused.",
+  "content_scripts": [
+      {
+        "matches": [
+              "https://www.youtube.com/*", 
+              "https://www.facebook.com/*", 
+              "https://www.reddit.com/*", 
+              "https://www.instagram.com/*", 
+              "https://www.amazon.com/*", 
+              "https://www.tiktok.com/*", 
+              "https://www.tumblr.com/*", 
+              "https://twitter.com/*", 
+              "https://www.twitch.tv/*"
+          ],
+        "js": ["./main.js"]
+      }
+    ],
+  "icons": {
+    "32": "coffee-break.png",
+    "64": "hotcoffee-book.png",
+    "128": "book.png"
+  }
 }
